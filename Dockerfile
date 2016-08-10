@@ -5,8 +5,8 @@ ENV NODE_ENV production
 
 ADD package.json .
 
-RUN npm install
+RUN npm install;
 
 ADD * ./
 
-CMD ["npm", "run", "build"]
+CMD ["npm", "test"]
